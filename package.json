@@ -1,0 +1,15 @@
+{
+  "name": "fortnite-backend-28.10",
+  "version": "1.0.0",
+  "description": "Backend Fortnite Build 28.10",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
