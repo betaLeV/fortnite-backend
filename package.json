@@ -1,15 +1,13 @@
 {
-  "name": "fortnite-backend-28.10",
+  "name": "og-project-auth",
   "version": "1.0.0",
-  "description": "Backend Fortnite Build 28.10",
+  "description": "Auth Discord pour Launcher OG",
   "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
   "dependencies": {
+    "axios": "^1.6.0",
     "express": "^4.18.2"
   },
-  "engines": {
-    "node": ">=14.0.0"
+  "scripts": {
+    "start": "node server.js"
   }
 }
