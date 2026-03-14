@@ -57,4 +57,17 @@ app.get('/callback', async (req, res) => {
     } catch (e) { res.status(500).send("Erreur Discord."); }
 });
 
+// Route pour le statut et les news
+app.get('/api/launcher-info', (req, res) => {
+    res.json({
+        status: "ONLINE", // Change en "MAINTENANCE" pour couper l'accès
+        news: [
+            { title: "AVIONS X-4", img: "avion.jpg" },
+            { title: "BIOME NEIGE", img: "neige.jpg" },
+            { title: "BOUTIQUE", img: "skins.jpg" }
+        ],
+        version: "1.0.0" // Utile pour l'auto-updater plus tard
+    });
+});
+
 app.listen(process.env.PORT || 3000);
